@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: edba596d12c01eb4c91ef270883fcd99
+timeCreated: 1477359487
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Area Light
+    100002: 'Area Light '
+    100004: bullseye
+    100006: Camera
+    100008: ceiling
+    100010: Directional Light
+    100012: DoorTop
+    100014: 'DoorTop '
+    100016: DoorTop  1
+    100018: DoorTop  2
+    100020: DoorTop  3
+    100022: DoorTop  4
+    100024: ExDoorL
+    100026: 'ExDoorL '
+    100028: exitDoor
+    100030: Floor
+    100032: //RootNode
+    100034: Locator
+    100036: 'Locator '
+    100038: 'Mesh '
+    100040: sideDoor
+    100042: 'sideDoor '
+    100044: sideDoor  1
+    100046: sideDoor  2
+    100048: sideDoor  3
+    100050: sideDoor  4
+    100052: wallPanel
+    100054: 'wallPanel '
+    100056: wallPanel  1
+    100058: wallPanel  2
+    100060: wallPanel long
+    100062: 'wallPanel long '
+    100064: wallPanel long  1
+    100066: wallPanel long  2
+    400000: Area Light
+    400002: 'Area Light '
+    400004: bullseye
+    400006: Camera
+    400008: ceiling
+    400010: Directional Light
+    400012: DoorTop
+    400014: 'DoorTop '
+    400016: DoorTop  1
+    400018: DoorTop  2
+    400020: DoorTop  3
+    400022: DoorTop  4
+    400024: ExDoorL
+    400026: 'ExDoorL '
+    400028: exitDoor
+    400030: Floor
+    400032: //RootNode
+    400034: Locator
+    400036: 'Locator '
+    400038: 'Mesh '
+    400040: sideDoor
+    400042: 'sideDoor '
+    400044: sideDoor  1
+    400046: sideDoor  2
+    400048: sideDoor  3
+    400050: sideDoor  4
+    400052: wallPanel
+    400054: 'wallPanel '
+    400056: wallPanel  1
+    400058: wallPanel  2
+    400060: wallPanel long
+    400062: 'wallPanel long '
+    400064: wallPanel long  1
+    400066: wallPanel long  2
+    2300000: bullseye
+    2300002: ceiling
+    2300004: DoorTop
+    2300006: 'DoorTop '
+    2300008: DoorTop  1
+    2300010: DoorTop  2
+    2300012: DoorTop  3
+    2300014: DoorTop  4
+    2300016: ExDoorL
+    2300018: 'ExDoorL '
+    2300020: exitDoor
+    2300022: Floor
+    2300024: sideDoor
+    2300026: 'sideDoor '
+    2300028: sideDoor  1
+    2300030: sideDoor  2
+    2300032: sideDoor  3
+    2300034: sideDoor  4
+    2300036: wallPanel
+    2300038: 'wallPanel '
+    2300040: wallPanel  1
+    2300042: wallPanel  2
+    2300044: wallPanel long
+    2300046: 'wallPanel long '
+    2300048: wallPanel long  1
+    2300050: wallPanel long  2
+    3300000: bullseye
+    3300002: ceiling
+    3300004: DoorTop
+    3300006: 'DoorTop '
+    3300008: DoorTop  1
+    3300010: DoorTop  2
+    3300012: DoorTop  3
+    3300014: DoorTop  4
+    3300016: ExDoorL
+    3300018: 'ExDoorL '
+    3300020: exitDoor
+    3300022: Floor
+    3300024: sideDoor
+    3300026: 'sideDoor '
+    3300028: sideDoor  1
+    3300030: sideDoor  2
+    3300032: sideDoor  3
+    3300034: sideDoor  4
+    3300036: wallPanel
+    3300038: 'wallPanel '
+    3300040: wallPanel  1
+    3300042: wallPanel  2
+    3300044: wallPanel long
+    3300046: 'wallPanel long '
+    3300048: wallPanel long  1
+    3300050: wallPanel long  2
+    4300000: 'DoorTop '
+    4300002: 'DoorTop '
+    4300004: DoorTop
+    4300006: 'wallPanel long '
+    4300008: wallPanel long
+    4300010: 'wallPanel '
+    4300012: 'wallPanel '
+    4300014: 'DoorTop '
+    4300016: 'DoorTop '
+    4300018: 'DoorTop '
+    4300020: 'wallPanel long '
+    4300022: 'wallPanel long '
+    4300024: 'wallPanel '
+    4300026: wallPanel
+    4300028: Floor
+    4300030: 'ExDoorL '
+    4300032: exitDoor
+    4300034: ExDoorL
+    4300036: ceiling
+    4300038: sideDoor
+    4300040: 'sideDoor '
+    4300042: 'sideDoor '
+    4300044: 'sideDoor '
+    4300046: 'sideDoor '
+    4300048: 'sideDoor '
+    4300050: bullseye
+    6400000: bullseye
+    6400002: ceiling
+    6400004: DoorTop
+    6400006: 'DoorTop '
+    6400008: DoorTop  1
+    6400010: DoorTop  2
+    6400012: DoorTop  3
+    6400014: DoorTop  4
+    6400016: ExDoorL
+    6400018: 'ExDoorL '
+    6400020: exitDoor
+    6400022: Floor
+    6400024: sideDoor
+    6400026: 'sideDoor '
+    6400028: sideDoor  1
+    6400030: sideDoor  2
+    6400032: sideDoor  3
+    6400034: sideDoor  4
+    6400036: wallPanel
+    6400038: 'wallPanel '
+    6400040: wallPanel  1
+    6400042: wallPanel  2
+    6400044: wallPanel long
+    6400046: 'wallPanel long '
+    6400048: wallPanel long  1
+    6400050: wallPanel long  2
+    7400000: modo_Anim
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

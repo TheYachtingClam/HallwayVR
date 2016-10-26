@@ -8,6 +8,8 @@ public class BallShooter : MonoBehaviour {
     public GameObject reticle;
     public float lowSpeed = 500.0f;
     public float highSpeed = 2500.0f;
+    public float lowSwipe = 20.0f;
+    public float highSwipe = 500.0f;
     public Text SwipeLeft;
     public Text SwipeRight;
     public Text SwipeUp;
@@ -64,30 +66,22 @@ public class BallShooter : MonoBehaviour {
         SwipeRight.text = "0";
         SwipeUp.text = "0";
         SwipeDown.text = "0";
+
+        var percentage = (distance - lowSwipe) / (highSwipe - lowSwipe);
+        shootBall(lowSpeed + (percentage * (highSpeed - lowSpeed)));
     }
 
     // Update is called once per frame
     void Update ()
     {
-	    if(Input.GetMouseButton(0))
-        {
-            if(!isFiring)
-            {
-                shootBall();
-            }
-            isFiring = true;
-        }
-        else
-        {
-            isFiring = false;
-        }
+
 	}
 
-    void shootBall()
+    void shootBall(float speed)
     {
         var newBall = Instantiate(ball);
         newBall.transform.position = gameObject.transform.position;
         Vector3 shoot = (reticle.transform.position - gameObject.transform.position).normalized;
-        newBall.GetComponent<Rigidbody>().AddForce(shoot * 1500.0f);
+        newBall.GetComponent<Rigidbody>().AddForce(shoot * speed);
     }
 }

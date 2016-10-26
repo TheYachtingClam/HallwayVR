@@ -219,7 +219,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 150040089}
   - 33: {fileID: 150040092}
-  - 135: {fileID: 150040091}
   - 23: {fileID: 150040090}
   m_Layer: 0
   m_Name: Reticle
@@ -270,18 +269,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!135 &150040091
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 150040088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &150040092
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1332,6 +1319,8 @@ MonoBehaviour:
   reticle: {fileID: 150040088}
   lowSpeed: 500
   highSpeed: 2500
+  lowSwipe: 20
+  highSwipe: 500
   SwipeLeft: {fileID: 1434848582}
   SwipeRight: {fileID: 1515686348}
   SwipeUp: {fileID: 1321354990}

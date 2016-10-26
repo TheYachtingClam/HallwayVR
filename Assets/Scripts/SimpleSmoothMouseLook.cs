@@ -31,6 +31,9 @@ public class SimpleSmoothMouseLook : MonoBehaviour
 
     void Update()
     {
+#if UNITY_ANDROID
+
+#else
         // Ensure the cursor is always locked when set
         Screen.lockCursor = lockCursor;
 
@@ -76,5 +79,6 @@ public class SimpleSmoothMouseLook : MonoBehaviour
             var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, transform.InverseTransformDirection(Vector3.up));
             transform.localRotation *= yRotation;
         }
+#endif
     }
 }

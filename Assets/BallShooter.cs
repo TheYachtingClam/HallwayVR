@@ -5,6 +5,7 @@ public class BallShooter : MonoBehaviour {
 
     public GameObject ball;
     public GameObject reticle;
+    public float speed = 500.0f;
     
     private bool isFiring = false;
 
@@ -35,6 +36,6 @@ public class BallShooter : MonoBehaviour {
         var newBall = Instantiate(ball);
         newBall.transform.position = gameObject.transform.position;
         Vector3 shoot = (reticle.transform.position - gameObject.transform.position).normalized;
-        newBall.GetComponent<Rigidbody>().AddForce(shoot * 500.0f);
+        newBall.GetComponent<Rigidbody>().AddForce(shoot * speed);
     }
 }

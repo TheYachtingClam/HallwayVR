@@ -571,6 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 452620085}
   reticle: {fileID: 150040088}
+  speed: 1500
 --- !u!114 &1880594024
 MonoBehaviour:
   m_ObjectHideFlags: 0

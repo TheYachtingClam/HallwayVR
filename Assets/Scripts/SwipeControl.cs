@@ -7,6 +7,8 @@ public class SwipeControl : MonoBehaviour
     // After how long swipe should detect
     public float _swipeTolerance = 20;
 
+    public float _maxSwipeLength = 500.0f;
+
     // Keeping initial position of finger/mouse
     Vector3 _initialPosition = Vector3.zero;
 
@@ -22,7 +24,7 @@ public class SwipeControl : MonoBehaviour
     // Change in finger Y position
     float _dy = 0;
 
-    public delegate void SwipeHandler(float distance);
+    public delegate void SwipeHandler(float percentage);
     public event SwipeHandler SwipeLeft;
     public event SwipeHandler SwipeRight;
     public event SwipeHandler SwipeUp;
@@ -41,6 +43,7 @@ public class SwipeControl : MonoBehaviour
 
     void Update()
     {
+#if UNITY_ANDROID
         // Finger/click Start
         if (Input.GetMouseButtonDown(0))
         {
@@ -77,25 +80,24 @@ public class SwipeControl : MonoBehaviour
                 if (_swipedHorizontal && _dx > 0) {
                     print("Swiped left");
                     if(SwipeLeft != null)
-                        SwipeLeft(_swipeDistance);
-
+                        SwipeLeft((_swipeDistance - _swipeTolerance) / (_maxSwipeLength - _swipeTolerance));
                     // Swiped Right
                 } else if (_swipedHorizontal && _dx < 0) {
                     print("Swiped Right");
                     if (SwipeRight != null)
-                        SwipeRight(_swipeDistance);
+                        SwipeRight((_swipeDistance - _swipeTolerance) / (_maxSwipeLength - _swipeTolerance));
 
                     // Swiped Down
                 } else if (!_swipedHorizontal && _dy > 0) {
                     print("Swiped Down");
                     if (SwipeDown != null)
-                        SwipeDown(_swipeDistance);
+                        SwipeDown((_swipeDistance - _swipeTolerance) / (_maxSwipeLength - _swipeTolerance));
 
                     // Swiped Up
                 } else if (!_swipedHorizontal && _dy < 0) {
                     print("Swiped Up");
                     if (SwipeUp != null)
-                        SwipeUp(_swipeDistance);
+                        SwipeUp((_swipeDistance - _swipeTolerance) / (_maxSwipeLength - _swipeTolerance));
                 }
             }
 
@@ -104,6 +106,7 @@ public class SwipeControl : MonoBehaviour
             _dy = 0;
             _initialPosition = Vector3.zero;
         }
+#endif
     }
 
 }

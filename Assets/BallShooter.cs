@@ -8,8 +8,6 @@ public class BallShooter : MonoBehaviour {
     public GameObject reticle;
     public float lowSpeed = 500.0f;
     public float highSpeed = 2500.0f;
-    public float lowSwipe = 20.0f;
-    public float highSwipe = 500.0f;
     public Text SwipeLeft;
     public Text SwipeRight;
     public Text SwipeUp;
@@ -20,54 +18,63 @@ public class BallShooter : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+#if UNITY_ANDROID
         var swipeController = gameObject.GetComponent<SwipeControl>();
         swipeController.SwipeLeft += SwipeController_SwipeLeft;
         swipeController.SwipeRight += SwipeController_SwipeRight;
         swipeController.SwipeUp += SwipeController_SwipeUp;
         swipeController.SwipeDown += SwipeController_SwipeDown;
+#else 
+        var clickController = gameObject.GetComponent<ClickTimeControl>();
+        clickController.Click += SwipeController_SwipeLeft;
+#endif
     }
 
     void OnDestroy()
     {
+#if UNITY_ANDROID
         var swipeController = gameObject.GetComponent<SwipeControl>();
         swipeController.SwipeLeft -= SwipeController_SwipeLeft;
         swipeController.SwipeRight -= SwipeController_SwipeRight;
         swipeController.SwipeUp -= SwipeController_SwipeUp;
         swipeController.SwipeDown -= SwipeController_SwipeDown;
+#else
+        var clickController = gameObject.GetComponent<ClickTimeControl>();
+        clickController.Click -= SwipeController_SwipeLeft;
+#endif
     }
 
-    private void SwipeController_SwipeDown(float distance)
+    private void SwipeController_SwipeDown(float percentage)
     {
         SwipeLeft.text = "0";
         SwipeRight.text = "0";
         SwipeUp.text = "0";
-        SwipeDown.text = distance.ToString();
+        SwipeDown.text = percentage.ToString();
     }
 
-    private void SwipeController_SwipeUp(float distance)
+    private void SwipeController_SwipeUp(float percentage)
     {
         SwipeLeft.text = "0";
         SwipeRight.text = "0";
-        SwipeUp.text = distance.ToString();
+        SwipeUp.text = percentage.ToString();
         SwipeDown.text = "0";
     }
 
-    private void SwipeController_SwipeRight(float distance)
+    private void SwipeController_SwipeRight(float percentage)
     {
         SwipeLeft.text = "0";
-        SwipeRight.text = distance.ToString();
+        SwipeRight.text = percentage.ToString();
         SwipeUp.text = "0";
         SwipeDown.text = "0";
     }
 
-    private void SwipeController_SwipeLeft(float distance)
+    private void SwipeController_SwipeLeft(float percentage)
     {
-        SwipeLeft.text = distance.ToString();
+        SwipeLeft.text = percentage.ToString();
         SwipeRight.text = "0";
         SwipeUp.text = "0";
         SwipeDown.text = "0";
-
-        var percentage = (distance - lowSwipe) / (highSwipe - lowSwipe);
+        
         shootBall(lowSpeed + (percentage * (highSpeed - lowSpeed)));
     }
 

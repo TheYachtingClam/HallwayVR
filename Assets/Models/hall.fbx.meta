@@ -39,6 +39,16 @@ ModelImporter:
     100062: 'wallPanel long '
     100064: wallPanel long  1
     100066: wallPanel long  2
+    100068: Area Light (2)
+    100070: door
+    100072: door (2)
+    100074: door (3)
+    100076: door (4)
+    100078: door (5)
+    100080: door (6)
+    100082: Hallway
+    100084: LeftExitDoor
+    100086: RightExitDoor
     400000: Area Light
     400002: 'Area Light '
     400004: bullseye
@@ -73,6 +83,16 @@ ModelImporter:
     400062: 'wallPanel long '
     400064: wallPanel long  1
     400066: wallPanel long  2
+    400068: Area Light (2)
+    400070: door
+    400072: door (2)
+    400074: door (3)
+    400076: door (4)
+    400078: door (5)
+    400080: door (6)
+    400082: Hallway
+    400084: LeftExitDoor
+    400086: RightExitDoor
     2300000: bullseye
     2300002: ceiling
     2300004: DoorTop
@@ -99,6 +119,15 @@ ModelImporter:
     2300046: 'wallPanel long '
     2300048: wallPanel long  1
     2300050: wallPanel long  2
+    2300052: door
+    2300054: door (2)
+    2300056: door (3)
+    2300058: door (4)
+    2300060: door (5)
+    2300062: door (6)
+    2300064: Hallway
+    2300066: LeftExitDoor
+    2300068: RightExitDoor
     3300000: bullseye
     3300002: ceiling
     3300004: DoorTop
@@ -125,6 +154,15 @@ ModelImporter:
     3300046: 'wallPanel long '
     3300048: wallPanel long  1
     3300050: wallPanel long  2
+    3300052: door
+    3300054: door (2)
+    3300056: door (3)
+    3300058: door (4)
+    3300060: door (5)
+    3300062: door (6)
+    3300064: Hallway
+    3300066: LeftExitDoor
+    3300068: RightExitDoor
     4300000: 'DoorTop '
     4300002: 'DoorTop '
     4300004: DoorTop
@@ -151,6 +189,15 @@ ModelImporter:
     4300046: 'sideDoor '
     4300048: 'sideDoor '
     4300050: bullseye
+    4300052: Hallway
+    4300054: LeftExitDoor
+    4300056: RightExitDoor
+    4300058: door
+    4300060: door (2)
+    4300062: door (3)
+    4300064: door (4)
+    4300066: door (5)
+    4300068: door (6)
     6400000: bullseye
     6400002: ceiling
     6400004: DoorTop
@@ -177,7 +224,17 @@ ModelImporter:
     6400046: 'wallPanel long '
     6400048: wallPanel long  1
     6400050: wallPanel long  2
+    6400052: door
+    6400054: door (2)
+    6400056: door (3)
+    6400058: door (4)
+    6400060: door (5)
+    6400062: door (6)
+    6400064: Hallway
+    6400066: LeftExitDoor
+    6400068: RightExitDoor
     7400000: modo_Anim
+    7400002: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
